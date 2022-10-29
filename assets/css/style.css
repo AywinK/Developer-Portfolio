@@ -62,6 +62,11 @@ header h1 {
   height: 80vh;
   width: 100%;
   object-fit: cover;
+  opacity: 0.4;
+}
+
+#hero_banner:hover {
+  opacity: 1;
 }
 
 #hero_aywin {
@@ -76,13 +81,10 @@ header h1 {
   box-shadow: 0.4rem 0.4rem var(--color_2), -0.4rem 0 .4rem var(--color_2);
 }
 
-#hello_world:hover {
-  text-shadow: 0.2rem 0.2rem var(--color_2);
-}
-
 #hello_world h2 {
   position: absolute;
   bottom: 10%;
   right: 15%;
   font-size: 10rem;
+  text-shadow: 0.2rem 0.2rem var(--color_2);
 }
