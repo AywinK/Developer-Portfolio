@@ -2,7 +2,7 @@
   /* Webpage Theme Colours */
   --color_1: #353839;
   --color_2: #c8a2c8;
-  --color_3: #FEFEFA;
+  --color_3: #FFFAFA;
 
 }
 
@@ -35,7 +35,7 @@ header {
   background: var(--color_2);
   width: 100%;
   padding: 10px;
-  font-size-adjust: larger;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
@@ -44,7 +44,7 @@ header h1 {
 }
 
 #main_nav a {
-  padding: 5px 14px;
+  padding: 5px 6px;
 }
 
 #main_nav a:hover {
@@ -54,8 +54,30 @@ header h1 {
   transition: 1.5s;
 }
 
+.hero {
+  position: relative;
+}
+
 #hero_banner {
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   object-fit: cover;
+}
+
+#hero_aywin {
+  position: absolute;
+  left: 15%;
+  top: 23%;
+  width: 20%;
+  object-fit: scale-down;
+  /* clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); */
+  z-index: 3;
+  border-radius: 100%;
+}
+
+#hello_world h2 {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  font-size: 10rem;
 }
