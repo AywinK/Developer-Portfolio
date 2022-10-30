@@ -91,8 +91,19 @@ header h1 {
   text-shadow: 0.2rem 0.2rem var(--color_2);
 }
 
+/* Main content flex wrap - improves gap */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  gap: 50px;
+  padding: 15px;
+}
+
+/* About section styling - flex better here */
 #about_grid_container {
-  padding: 2.5% 5%;
+  /* padding: 2.5% 5%; */
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 1fr 2fr;
@@ -105,24 +116,23 @@ header h1 {
 }
 
 #about_grid_container p {
+  text-align: left;
   grid-column: 1 / -1;
 }
 
 /* Work Section */
 #work {
   display: grid;
-  padding: 2.5% 5%;
+  /* padding: 2.5% 5%; */
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 10vh 30vh 20vh 20vh;
+  grid-template-rows: 1fr 3fr 2fr 2fr;
   grid-template-areas:"work work"
                       "featured featured"
                       "Project_1 Project_2"
                       "Project_3 Project_4";
   justify-content: center;
   align-items: center;
-  /* row-gap: 5%;
-  column-gap: 2.5%; */
-  gap: 5% 2.5%;
+  gap: 5% 5%;
 }
 
 /* Work Heading */
@@ -192,7 +202,7 @@ header h1 {
   flex-direction: row;
   align-items: center;
   gap: 1vh;
-  padding: 10% 2px;
+  /* padding: 10% 2px; */
 }
 
 .section_contact p {
