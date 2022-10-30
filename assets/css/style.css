@@ -142,7 +142,7 @@ header h1 {
   display: grid;
   padding: 0 5%;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.1fr 3fr 2fr 2fr;
+  grid-template-rows: 0.1fr 3fr 2fr 2fr; /* CAREFUL <1fr CAN BREAK SCALING LAYOUT */
   grid-template-areas:"work work"
                       "featured featured"
                       "Project_1 Project_2"
