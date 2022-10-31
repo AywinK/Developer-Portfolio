@@ -304,3 +304,43 @@ header h1 {
     font-size: 1.1rem;
   }
 }
+
+/* Max width <400px */
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .section_contact h2 {
+    display: none;
+  }
+
+  .section_contact p a img:hover {
+    width: 5vh;
+    height: 5vh;
+    transition: 0ms;
+  }
+
+  #hello_world h2 {
+    display: none;
+  }
+
+  .hero {
+    grid-template-areas:"aywin aywin"
+                        "aywin aywin";
+  }
+}
+
+/* Max width <370px */
+@media only screen and (max-width: 370px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+
+/* Max width <340px */
+@media only screen and (max-width: 340px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
